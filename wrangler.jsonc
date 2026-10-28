@@ -1,0 +1,33 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "spoolwise",
+  "main": "vinext/server/fetch-handler",
+  "account_id": "14a5af1aea2fe5279b4f57e78fab7b7e",
+  "compatibility_date": "2026-08-01",
+  "compatibility_flags": ["nodejs_compat"],
+  "vars": {
+    "SUPABASE_URL": "https://bhohzsqreyxqhnusmvpq.supabase.co",
+    "SUPABASE_PUBLISHABLE_KEY": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImJob2h6c3FyZXl4cWhudXNtdnBxIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODYyNzYwMzAsImV4cCI6MjEwMTg1MjAzMH0.IZSOCt8hE8DNAa3B6w6bjVnIXl1aZRXt6--HoobCYII"
+  },
+  "secrets": {
+    "required": [
+      "MOYASAR_PUBLISHABLE_KEY",
+      "MOYASAR_SECRET_KEY",
+      "MOYASAR_WEBHOOK_SECRET",
+      "PREMIUM_MONTHLY_PRICE_HALALAS",
+      "SUBSCRIPTION_TOKEN_KEY"
+    ]
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "spoolwise-inventory",
+      "database_id": "55bb7831-8154-49a7-8c60-dc6117efe723",
+      "migrations_dir": "drizzle"
+    }
+  ],
+  "observability": {
+    "enabled": true
+  },
+  "cache": { "enabled": true }
+}
